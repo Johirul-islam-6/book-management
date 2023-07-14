@@ -1,12 +1,12 @@
+import MainLayOut from "./Layout/MainLayOut";
 
-function App() {
 
-
+const App = () => {
   return (
     <>
-     <h1>test</h1>
+       <MainLayOut />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
