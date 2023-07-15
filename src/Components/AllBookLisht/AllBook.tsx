@@ -4,7 +4,7 @@ import BookCard from './BookCard';
 const AllBook = () => {
     return (
         <>
-        <section className="w-[100%] h-[auto] bg-white px-5 py-16">
+        <div className="w-[100%] h-[auto] bg-white px-5 py-16">
              {/* display show all book information */}
             <div className="grid w-[80%] mx-auto py-9 border-solid border-2 border-[#dad7d7] rounded-lg grid-cols-1  md:divide-x-2 md:divide-y-0 divide-y-2 md:grid-cols-4 gap-2 justify-center items-center bg-white card-main-box">
              <div  className="flex justify-center items-center">
@@ -47,7 +47,7 @@ const AllBook = () => {
   
 
 
-        </section>
+        </div>
 
         </>
     );

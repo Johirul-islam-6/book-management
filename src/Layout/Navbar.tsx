@@ -27,7 +27,7 @@ const Navbar = () => {
 
 
   </div>
-  {/* // Onley 1000*+ */}
+  {/* // Onley Lz */}
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       <li><Link to={'/'}>Home</Link></li>
@@ -40,12 +40,14 @@ const Navbar = () => {
           </ul>
         </details>
       </li>
+      <li><Link to={'add-book'}>Add Book</Link></li>
       <li><a>About</a></li>
       <li><a>Contact</a></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <Link to={'/login'} className="mx-2 text-[16px] pb-[7px] text-white font-bold bg-[#24A4EA] py-[6px] px-4 rounded-md">login</Link>
+    <Link to={'/registration'} className="mx-2 text-white text-[16px] pb-[7px] font-bold bg-[#24A4EA] py-[6px] px-3 rounded-md">Registration</Link>
   </div>
 </div>
         </>

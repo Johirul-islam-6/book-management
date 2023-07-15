@@ -15,6 +15,7 @@ const BookCard = () => {
                         <p className="text-gray-700 md:text-lg">Explore popular tourist destinations as well as hidden local favourites <span className="text-[#26d1ef]">more..</span></p>
                     </div>
                     <div className="p-4 md:p-5 bg-gray-100">
+                         <div className="text-[14px] text-gray-700 flex"><span className="text-gray-900 font-bold flex gap-1"> <span className="text-[#c01f52] mt-[5px]"> <FaHeart/> </span> 17k </span>   <span className="pl-1"> person Loved it.</span> </div>
                         <div className="sm:flex sm:justify-between sm:items-center">
                             <div>
                               
@@ -39,10 +40,7 @@ const BookCard = () => {
                            </Link>
                         </div>
                         
-                        <div className="mt-3 text-gray-600 text-sm md:text-base flex justify-between mx-auto pr-2"> 
-                          <div className="text-lg text-gray-700"><span className="text-gray-900 font-bold">17</span> person</div>
-                          <span className="flex text-[#db224aaf] font-bold border-solid border-2 border-sky-500 px-2 py-[2px] cursor-pointer rounded-md"> 
-                          <FaHeart className='mt-[5px] mr-1 text-[18px] text-[#db224a9a]'></FaHeart> love </span></div>
+                      
                      
                     </div>
                 </div>
@@ -59,6 +57,7 @@ const BookCard = () => {
                         <p className="text-gray-700 md:text-lg">Explore popular tourist destinations as well as hidden local favourites <span className="text-[#26d1ef]">more..</span></p>
                     </div>
                     <div className="p-4 md:p-5 bg-gray-100">
+                         <div className="text-[14px] text-gray-700 flex"><span className="text-gray-900 font-bold flex gap-1"> <span className="text-[#c01f52] mt-[5px]"> <FaHeart/> </span> 17k </span>   <span className="pl-1"> person Loved it.</span> </div>
                         <div className="sm:flex sm:justify-between sm:items-center">
                             <div>
                               
@@ -83,10 +82,7 @@ const BookCard = () => {
                            </Link>
                         </div>
                         
-                        <div className="mt-3 text-gray-600 text-sm md:text-base flex justify-between mx-auto pr-2"> 
-                          <div className="text-lg text-gray-700"><span className="text-gray-900 font-bold">17</span> person</div>
-                          <span className="flex text-[#db224aaf] font-bold border-solid border-2 border-sky-500 px-2 py-[2px] cursor-pointer rounded-md"> 
-                          <FaHeart className='mt-[5px] mr-1 text-[18px] text-[#db224a9a]'></FaHeart> love </span></div>
+                      
                      
                     </div>
                 </div>
@@ -103,6 +99,7 @@ const BookCard = () => {
                         <p className="text-gray-700 md:text-lg">Explore popular tourist destinations as well as hidden local favourites <span className="text-[#26d1ef]">more..</span></p>
                     </div>
                     <div className="p-4 md:p-5 bg-gray-100">
+                         <div className="text-[14px] text-gray-700 flex"><span className="text-gray-900 font-bold flex gap-1"> <span className="text-[#c01f52] mt-[5px]"> <FaHeart/> </span> 17k </span>   <span className="pl-1"> person Loved it.</span> </div>
                         <div className="sm:flex sm:justify-between sm:items-center">
                             <div>
                               
@@ -122,17 +119,12 @@ const BookCard = () => {
                                     <div className="text-gray-600 ml-2 text-sm md:text-base mt-1">28 reviews</div>
                                 </div>
                             </div>
-                          
                            <Link to={'details/1'}>
                             <button className="mt-3 sm:mt-0 py-2 px-5 md:py-2 md:px-5 bg-indigo-700 hover:bg-indigo-600 font-bold text-white md:text-md rounded-lg shadow-md">Read now</button>
                            </Link>
-                     
                         </div>
                         
-                        <div className="mt-3 text-gray-600 text-sm md:text-base flex justify-between mx-auto pr-2"> 
-                          <div className="text-lg text-gray-700"><span className="text-gray-900 font-bold">17</span> person</div>
-                          <span className="flex text-[#db224aaf] font-bold border-solid border-2 border-sky-500 px-2 py-[2px] cursor-pointer rounded-md"> 
-                          <FaHeart className='mt-[5px] mr-1 text-[18px] text-[#db224a9a]'></FaHeart> love </span></div>
+                      
                      
                     </div>
                 </div>
@@ -149,6 +141,7 @@ const BookCard = () => {
                         <p className="text-gray-700 md:text-lg">Explore popular tourist destinations as well as hidden local favourites <span className="text-[#26d1ef]">more..</span></p>
                     </div>
                     <div className="p-4 md:p-5 bg-gray-100">
+                         <div className="text-[14px] text-gray-700 flex"><span className="text-gray-900 font-bold flex gap-1"> <span className="text-[#c01f52] mt-[5px]"> <FaHeart/> </span> 17k </span>   <span className="pl-1"> person Loved it.</span> </div>
                         <div className="sm:flex sm:justify-between sm:items-center">
                             <div>
                               
@@ -173,15 +166,13 @@ const BookCard = () => {
                            </Link>
                         </div>
                         
-                        <div className="mt-3 text-gray-600 text-sm md:text-base flex justify-between mx-auto pr-2"> 
-                          <div className="text-lg text-gray-700"><span className="text-gray-900 font-bold">17</span> person</div>
-                          <span className="flex text-[#db224aaf] font-bold border-solid border-2 border-sky-500 px-2 py-[2px] cursor-pointer rounded-md"> 
-                          <FaHeart className='mt-[5px] mr-1 text-[18px] text-[#db224a9a]'></FaHeart> love </span></div>
+                      
                      
                     </div>
                 </div>
             </div>
         </div>
+       
        
     </div>
         </>

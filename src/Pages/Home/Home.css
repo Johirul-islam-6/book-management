@@ -19,7 +19,9 @@ font-family: 'PT Sans Narrow', sans-serif; */
     font-weight: 400 !important;
     color: #000000 !important;
 }
-
+.navbar{
+    z-index: 10000;
+}
 .navbar ul li a{
     color: #000000 !important;
     font-size: 16px;

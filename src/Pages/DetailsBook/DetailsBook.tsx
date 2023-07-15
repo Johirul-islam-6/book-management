@@ -7,9 +7,8 @@ const DetailsBook = () => {
   const [review, setReview] = useState('');
   const [isEditing, setIsEditing] = useState(true);
 
-  const handleReviewChange = (e) => {
- 
-    setReview(e.target.value);
+  const handleReviewChange = () => {
+   setIsEditing(true)
   };
 
   const handleEdit = () => {
@@ -21,7 +20,7 @@ const DetailsBook = () => {
   };
 
   return (
-  <section className='w-[100%] h-[auto]  py-[80px] bg-white'>
+  <div className='w-[100%] h-[auto]  py-[80px] bg-white'>
    <div className=" rounded-lg shadow p-4 ">
       <div className="grid grid-cols-2  justify-between mb-4">
         {/* image section */}
@@ -41,12 +40,14 @@ const DetailsBook = () => {
             <p className="text-gray-500 text-[18px] font-bold">Author : mr rasel khan</p>
           </div>
           <div className="vid">
+           <Link to={'/edite/1'}>
             <button
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2"
             onClick={handleEdit}
           >
             Edit
           </button>
+           </Link>
           <button
             className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
             onClick={handleDelete}
@@ -63,7 +64,7 @@ const DetailsBook = () => {
 
             <p className=' pt-6'> Details  Story : Lorem ipsum dolor sit amet us quisquam. Incidunt animi unde quaerat necessitatibus explicabo iusto laudantium. Modi, deserunt perspiciatis delectus omnis earum pariatur quasi commodi sint architecto dignissimos illum saepe sapiente, fugit quam ullam, aperiam doloremque alias ut quas quae fuga quia tempora. Reprehenderit rerum nihil magnam tenetur vel voluptatibus modi accusantium velit dolores qui officiis, provident rem quo laborum dolor nobis eaque doloribus obcaecati quia nostrum minima, consequuntur voluptas asperiores consectetur? A similique suscipit quos esse distinctio nihil eaque repudiandae minus at quo facilis ea beatae deserunt aspernatur ipsa sit consequuntur consectetur rerum iure repellendus et sint, officiis eum. Temporibus, nam repudiandae exercitationem molestias assumenda sapiente nesciunt quo consequuntur, ut eveniet accusamus officia! Ea sapiente nam incidunt consequatur, voluptates molestias hic? Consequuntur voluptas recusandae fugit maiores inventtaque officiis distinctio accusantium!</p>
                      <div className="mt-3 text-gray-600 text-sm md:text-base flex justify-between mx-auto pr-2"> 
-                          <div className="text-lg text-gray-700"><span className="text-gray-900 font-bold text-[#db224a9a]">17</span> person</div>
+                                                  <div className="text-[16px] font-semibold text-gray-700 flex"><span className="text-gray-900 font-bold flex gap-1"> <span className="text-[#c01f52] mt-[5px]"> <FaHeart/> </span> 17k </span>   <span className="pl-1"> person Loved it.</span> </div>
                           <span className="flex text-[#db224aaf] font-bold border-solid border-2 border-sky-500 px-2 py-[2px] cursor-pointer rounded-md"> 
                           <FaHeart className='mt-[5px] mr-1 text-[18px] text-[#db224a9a]'></FaHeart> love </span></div>
 </div>
@@ -137,7 +138,7 @@ const DetailsBook = () => {
 
 
     </div>
-</section>
+</div>
    
   );
 };
