@@ -1,9 +1,11 @@
+import AllBook from '../../Components/AllBookLisht/AllBook';
+import BookCard from '../../Components/AllBookLisht/BookCard';
 import './Home.css'
 
 const Home = () => {
     return (
         <>
-  <div className="div w-[100%] h-[90vh] flex home_banner justify-center">
+     <div className="div w-[100%] h-[90vh] flex home_banner justify-center">
       <div className="center-div w-[100%] justify-center flex items-center">
     
     <div className="max-w-xl w-[100%] mx-3 md:mx-0">
@@ -21,7 +23,10 @@ const Home = () => {
     </div>
   
       </div>
-  </div>
+     </div>
+
+     <AllBook/>
+
         </>
     );
 };
