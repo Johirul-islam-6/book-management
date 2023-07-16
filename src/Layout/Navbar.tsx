@@ -72,14 +72,14 @@ const Navbar = () => {
    
     {
       user.email && <>
-       <a onClick={handelLogOut} className="mx-2 text-[16px] pb-[7px] text-white font-bold bg-[#4F46E5] py-[6px] px-4 rounded-md">LogOut</a>
+       <a onClick={handelLogOut} className="mx-2 text-white text-[15px] pb-[7px] font-bold bg-[#4F46E5] py-[4px] px-2 rounded-md">LogOut</a>
       </>
     }
     {
       
       !user.email && <>
-       <Link to={'/login'} className="mx-2 text-[16px] pb-[7px] text-white font-bold bg-[#4F46E5] py-[6px] px-4 rounded-md">login</Link>
-       <Link to={'/registration'} className="mx-2 text-white text-[16px] pb-[7px] font-bold bg-[#4F46E5] py-[6px] px-3 rounded-md">Registration</Link>
+       <Link to={'/login'} className="mx-2 text-[15px] pb-[7px] text-white font-bold bg-[#4F46E5] py-[4px] px-2 rounded-md">login</Link>
+       <Link to={'/registration'} className="mx-2 text-white text-[15px] pb-[7px] font-bold bg-[#4F46E5] py-[4px] px-2 rounded-md">Registration</Link>
       </>
     }
     

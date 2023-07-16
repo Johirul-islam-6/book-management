@@ -37,8 +37,7 @@ const Login = () => {
   };
 
   useEffect(() =>{
-    if(user.email && isLoading){
-       
+    if(user.email){
         navigate('/')
     }
   } ,[user.email, isLoading])
@@ -55,7 +54,7 @@ const Login = () => {
 
      <h2>Sign In</h2> 
 
-         <form className="form" onSubmit={handleSubmit(onSubmit)}> 
+     <form className="form" onSubmit={handleSubmit(onSubmit)}> 
 
    
 

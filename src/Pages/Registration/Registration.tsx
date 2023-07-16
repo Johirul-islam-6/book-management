@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import { useForm } from 'react-hook-form';
 import { createUser } from '../../Redux/features/user/userSlice';
@@ -13,7 +13,8 @@ interface SignupFormInputs {
 }
 
 const Registration = ()  => {
-
+ 
+  const navigate = useNavigate()
   const {
     register,
     handleSubmit,
@@ -26,6 +27,7 @@ const Registration = ()  => {
    const onSubmit = (data: SignupFormInputs) => {
     console.log(data);
     void dispatch(createUser({email : data.email, password: data.password}))
+    navigate('/')
   };
 
 

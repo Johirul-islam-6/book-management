@@ -1,7 +1,17 @@
+import { useGetAllBooksQuery } from '../../Redux/features/allBook/AllBookApi';
+import { IBookList } from '../../types/globalTypes';
 import './AllBook.css'
 import BookCard from './BookCard';
 
 const AllBook = () => {
+
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const {data, isLoading, error } = useGetAllBooksQuery(undefined);
+
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+  const allBookList  = data?.data
+
     return (
         <>
         <div className="w-[100%] h-[auto] bg-white px-5 py-16">
@@ -42,7 +52,16 @@ const AllBook = () => {
                 </div>
 
                  <div className="container flex justify-center ">
-                       <BookCard/>
+                  <div className="grid gap-3  grid-cols-1 md:grid-cols-2 items-center justify-center ">
+                     {
+                       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call
+                       allBookList?.map((item : IBookList) => {
+                       return <BookCard key={item.id} book={item} />;
+                      })
+                     }
+                      
+                    
+                 </div>
                  </div>
   
 

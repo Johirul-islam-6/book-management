@@ -45,7 +45,6 @@ const App = () => {
   theme="light"
  />
  
-  <ToastContainer />
        <MainLayOut />
     </>
   );
