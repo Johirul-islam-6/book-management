@@ -1,7 +1,28 @@
 import { Link } from "react-router-dom";
+import { useAppDispatch, useAppSelector } from "../Redux/hook";
+import { signOut } from "firebase/auth";
+import { auth } from "../lib/firebase";
+import { setUser } from "../Redux/features/user/userSlice";
 
 
 const Navbar = () => {
+
+  const {user, isLoading} = useAppSelector((state) => state.user);
+
+  const dispatch = useAppDispatch()
+
+  const handelLogOut = () =>{
+    void signOut(auth).then(() =>{
+    dispatch(setUser(null))
+    })
+  }
+
+   if(isLoading){
+       return <div className="flex justify-center items-center h-[100vh] ">
+      <div className="rounded-full border-4 border-t-4 border-green-600 h-20 w-20 animate-spin"></div>
+      </div>
+    }
+
     return (
         <>
 <div className="navbar bg-[#FFFFFF] px-6 fixed top-0">
@@ -46,8 +67,23 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link to={'/login'} className="mx-2 text-[16px] pb-[7px] text-white font-bold bg-[#4F46E5] py-[6px] px-4 rounded-md">login</Link>
-    <Link to={'/registration'} className="mx-2 text-white text-[16px] pb-[7px] font-bold bg-[#4F46E5] py-[6px] px-3 rounded-md">Registration</Link>
+ 
+
+   
+    {
+      user.email && <>
+       <a onClick={handelLogOut} className="mx-2 text-[16px] pb-[7px] text-white font-bold bg-[#4F46E5] py-[6px] px-4 rounded-md">LogOut</a>
+      </>
+    }
+    {
+      
+      !user.email && <>
+       <Link to={'/login'} className="mx-2 text-[16px] pb-[7px] text-white font-bold bg-[#4F46E5] py-[6px] px-4 rounded-md">login</Link>
+       <Link to={'/registration'} className="mx-2 text-white text-[16px] pb-[7px] font-bold bg-[#4F46E5] py-[6px] px-3 rounded-md">Registration</Link>
+      </>
+    }
+    
+   
    <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
