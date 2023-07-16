@@ -23,7 +23,7 @@ const Navbar = () => {
       </ul>
     </div>
     
-      <a className="text-black pl-2 text-[20px] font-bold">Book'<span className="text-[#24A4EA]">Library</span></a>
+      <a className="text-black pl-2 text-[20px] font-bold">Book'<span className="text-[#4F46E5]">Library</span></a>
 
 
   </div>
@@ -46,8 +46,26 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link to={'/login'} className="mx-2 text-[16px] pb-[7px] text-white font-bold bg-[#24A4EA] py-[6px] px-4 rounded-md">login</Link>
-    <Link to={'/registration'} className="mx-2 text-white text-[16px] pb-[7px] font-bold bg-[#24A4EA] py-[6px] px-3 rounded-md">Registration</Link>
+    <Link to={'/login'} className="mx-2 text-[16px] pb-[7px] text-white font-bold bg-[#4F46E5] py-[6px] px-4 rounded-md">login</Link>
+    <Link to={'/registration'} className="mx-2 text-white text-[16px] pb-[7px] font-bold bg-[#4F46E5] py-[6px] px-3 rounded-md">Registration</Link>
+   <div className="dropdown dropdown-end">
+      <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img src="https://lh3.googleusercontent.com/ogw/AGvuzYbBTttvoE_lAgzudoREGT6mqnkWhWz8qJFZlm09eg=s32-c-mo" />
+        </div>
+      </label>
+      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52">
+        <li>
+          <a className="justify-between">
+            Profile
+            <span className="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  
   </div>
 </div>
         </>
