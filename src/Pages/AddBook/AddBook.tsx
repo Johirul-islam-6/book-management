@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import { useForm } from "react-hook-form";
 import { IBookList } from "../../types/globalTypes";
 import { Link } from "react-router-dom";
@@ -37,6 +38,7 @@ const AddBook = () => {
   like : "10"
   }
   console.log(data)
+
    await postComment(data)
 
     toast.success('A Book create successfully')

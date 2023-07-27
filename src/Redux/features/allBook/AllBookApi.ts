@@ -10,7 +10,9 @@ const AllBookApi = api.injectEndpoints({
     singleBook: builder.query({
       query: (id) => `/booklist/${id}`,
     }),
+    
     postBook: builder.mutation({
+
       query: ({ data }) => ({
         url: `/booklist/add-book`,
         method: 'POST',

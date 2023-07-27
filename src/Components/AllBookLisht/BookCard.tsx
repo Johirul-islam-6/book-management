@@ -11,7 +11,7 @@ const BookCard = ({book}) => {
         <>
              <div  className="max-w-md md:max-w-2xl px-2 mt-5">
             <div className="bg-white shadow-xl rounded-lg overflow-hidden md:flex">
-                <img src={book?.bookPhoto} className=" bg-bottom h-[30vh] md:h-[35vh] md:w-72">
+                <img src={book?.bookPhoto} className=" bg-bottom h-[30vh] md:h-[35vh] md:w-[30%]">
                 </img>
                 <div>
                     <div className="p-4 md:p-5">
